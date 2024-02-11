@@ -1,0 +1,49 @@
+/**
+ * @license Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+.ck-inspector {
+	--ck-inspector-icon-size: 19px;
+	--ck-inspector-button-size: calc( 4px + var(--ck-inspector-icon-size) );
+	--ck-inspector-color-button: #777;
+	--ck-inspector-color-button-hover: #222;
+	--ck-inspector-color-button-on: #0F79E2;
+}
+
+.ck-inspector .ck-inspector-button {
+	width: var(--ck-inspector-button-size);
+	height: var(--ck-inspector-button-size);
+	border: 0;
+	overflow: hidden;
+	border-radius: 2px;
+	padding: 2px;
+	color: var(--ck-inspector-color-button);
+
+	&.ck-inspector-button_on,
+	&.ck-inspector-button_on:hover {
+		color: var(--ck-inspector-color-button-on);
+		opacity: 1;
+	}
+
+	&.ck-inspector-button_disabled {
+		opacity: .3;
+	}
+
+	& > span {
+		display: none;
+	}
+
+	&:hover {
+		color: var(--ck-inspector-color-button-hover);
+	}
+
+	& svg {
+		width: var(--ck-inspector-icon-size);
+		height: var(--ck-inspector-icon-size);
+
+		&, & * {
+			fill: currentColor;
+		}
+	}
+}

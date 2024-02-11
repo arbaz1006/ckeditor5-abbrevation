@@ -1,0 +1,16 @@
+/**
+ * @license Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+html body.ck-inspector-body-expanded {
+	margin-bottom: var(--ck-inspector-height);
+}
+
+html body.ck-inspector-body-collapsed {
+	margin-bottom: var(--ck-inspector-collapsed-height);
+}
+
+.ck-inspector-wrapper * {
+	box-sizing: border-box;
+}
